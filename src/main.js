@@ -9,7 +9,6 @@ import AppContainer from './containers/AppContainer'
 // ========================================================
 // Browser History Setup
 // ========================================================
-console.log(__BASENAME__)
 const browserHistory = useRouterHistory(createBrowserHistory)({
   basename: __BASENAME__
 })

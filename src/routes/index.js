@@ -42,5 +42,5 @@ export const createRoutes = (store) => ({
     inside the route `getComponent` function, since it is only invoked
     when the route exists and matches.
 */
-
+console.log(createRoutes)
 export default createRoutes

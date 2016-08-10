@@ -9,11 +9,11 @@ export default {
   development: (config) => ({
     compiler_public_path: `http://${config.server_host}:${config.server_port}/`,
     proxy: {
-      contentBase: path.resolve( config.dir_client),
-      host:config.server_host,
-      port: config.server_port,
-      hot: true,
-      stats: { colors: true }
+      enabled: false,
+      options: {
+        host: 'http://localhost:8000',
+        match: /^\/api\/.*/
+      }
     }
   }),
 

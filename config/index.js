@@ -102,7 +102,7 @@ config.utils_paths = {
 // 环境变量配置
 // ========================================================
 
-debug(`查看环境变量 NODE_ENV "${config.env}".`);
+/*debug(`查看环境变量 NODE_ENV "${config.env}".`);
 const environments = require('./environments').default
 const overrides = environments[config.env]
 if (overrides) {
@@ -110,6 +110,6 @@ if (overrides) {
     Object.assign(config, overrides(config))
 } else {
     debug('No environment overrides found, defaults will be used.')
-}
+}*/
 // debug(config)
 export default config

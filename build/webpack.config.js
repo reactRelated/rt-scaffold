@@ -9,7 +9,7 @@ const debug = _debug('app:webpack:config');
 const paths = config.utils_paths;                   //获取路径配置函数
 const {__DEV__, __PROD__} = config.globals;         //进程 环境变量
 var webpackHot='webpack/hot/dev-server';
-var webpackClient=`webpack-dev-server/client?http://localhost:${config.server_port}`;
+var webpackClient=`webpack-dev-server/client?http://${config.server_host}:${config.server_port}`;
 debug('创建配置.')
 debug(webpackClient)
 
