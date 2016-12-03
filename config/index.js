@@ -36,7 +36,7 @@ const config={
     // ----------------------------------
     // 编译器 配置
     // ----------------------------------
-    compiler_css_modules     : true,
+    compiler_css_modules     : false,
     // webpack.devtool 配置
     compiler_devtool         : 'source-map',
     compiler_hash_type       : 'hash',
